@@ -1,54 +1,9 @@
 [![Build Status](https://travis-ci.com/globalbioticinteractions/template-dataset.svg)](https://travis-ci.com/globalbioticinteractions/template-dataset) [![DOI](https://zenodo.org/badge/26293374.svg)](https://zenodo.org/badge/latestdoi/26293374) [![GloBI](https://api.globalbioticinteractions.org/interaction.svg?accordingTo=globi:globalbioticinteractions/template-dataset)](https://globalbioticinteractions.org/?accordingTo=globi:globalbioticinteractions/template-dataset) 
 
-This repository provides an example on how to make your interaction data available through Global Biotic Interactions (GloBI, http://globalbioticinteractions.org) .
+This repository provides co-roosting interactions from the paper [Willoughby et al. 2017](https://www.mdpi.com/1424-2818/9/3/35) for integration into Global Biotic Interactions (GloBI, http://globalbioticinteractions.org) .
 
-If you have comments or questions please [open an issue](https://github.com/jhpoelen/eol-globi-data/issues/new).
-
-## Share Your Interaction Data
-If you want to your own data discoverable through GloBI:
-
-1. Create a repository from this template dataset by visiting  https://github.com/globalbioticinteractions/template-dataset/generate or clicking the "use this template" button. ~~Alternatively, you can fork this template dataset, but GitHub does not allow for forking a repository more than once for a specific account. If you do want multiple forks for your account, please see [create multi-forks](https://handong1587.github.io/linux_study/2015/12/18/create-multi-forks.html)~~.
-2. Edit your ```README.md``` to describe your data in a human readable form.
-3. Ensure that your README.rd contains a reference to ```http://globalbioticinteractions.org```.
 4. Edit your ```globi.json``` to provide a machine readable description of your dataset (e.g. citation, license, version, files, format).
-5. Edit the name of your repository and description to make it easy for others to understand what your data is about.
 
-After you do this, the data will be available through GloBI within a day or so.
-
-If you don't feel comfortable being indexed by GloBI because your data isn't ready yet, or no longer up-to-date, you can set ```"deprecated": true``` in ```globi.json``` to unlist (or opt-out) the dataset to be indexed and made visible via https://globalbioticinteractions.org (see https://github.com/globalbioticinteractions/globalbioticinteractions/issues/372). 
-
-## Enable Automated Dataset Preservation/Publication
-Preserving and publishing your valuable data is now easier than ever. 
-
-To enable automated preserving and publishing your data:
-
-1. login/register with [zenodo](https://zenodo.org)
-2. enable automated preservation and publication of your dataset using instructions at  https://zenodo.org/account/settings/github/ or https://guides.github.com/activities/citable-code/
-3. edit your zenodo publication and add it to zenodo's [Global Biotic Interactions community](https://zenodo.org/communities/globalbioticinteractions/). 
-
-For a completed example, see the publication of this template repository at [![DOI](https://zenodo.org/badge/26293374.svg)](https://zenodo.org/badge/latestdoi/26293374).
-
-## Enable Integration Testing
-You can use http://travis-ci.com to check whether your data can be read by GloBI. This helps you to confirm that the changes you make in your GloBI data repository are compatible with GloBIs data processing pipeline.
-
-To enable:
-
-1. make sure that the file ```.travis.yml``` is present in your repo. If not, copy the one available in https://github.com/globalbioticinteractions/template-dataset/blob/master/.travis.yml . 
-2. go to http://travis-ci.com and login using your github credentials
-3. locate your data repository in your account list
-4. enable your data repository for travis
-5. now, trigger your first build by making a change in your repository
-6. confirm that travis-ci.com picks up on your changes
-
-Now, whenever you make a change to data repository that is incompatible with GloBI, you receive a notification. If you'd like, you can include a build badge on your own html pages to see the health of your data. Here's an example of a build badge:  
-
-[![Build Status](https://travis-ci.com/globalbioticinteractions/template-dataset.png)](https://travis-ci.com/globalbioticinteractions/template-dataset)
-
-
-## Data Format and Dictionary
-The file [interactions.tsv](./interactions.tsv) is a suggestion on how to encode your interaction data using a tab separated file format (tsv) in combination with columns described below. This provides an example on how to capture your data in a human and machine friendly way and keep it relatively doable to update the file using a basic text editor. Other formats are supported, just let us know about the syntax, and we'll make it work.
-
-Each term has two columns: one for an id and another for a label. The former is to make the term machine readable, the latter to make is easy to read for humans. With both id and name present possible typos or other transcription errors can be detected with a (somewhat) straightforward algorithm.
 
 
 term | example | description | 
