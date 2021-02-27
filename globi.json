@@ -1,5 +1,5 @@
 { 
-  "_comment": "Co-roosting interactions of bats manually extracted from the literature. See https://www.mdpi.com/1424-2818/9/3/35 for more information.",
+  "_comment": "Bat-virus interactions manually extracted from the literature. See https://www.mdpi.com/1424-2818/9/3/35 for more information.",
   "citation": "Willoughby AR, Phelps KL, Olival KJ, Predict Consortium. A comparative analysis of viral richness and viral sharing in cave-roosting bats. Diversity. 2017 Sep;9(3):35.",
   "deprecated": false
 }
